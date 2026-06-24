@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Add DTOs Book and User Request and Response">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/dto/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/dto/response/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Docker configuration: docker-compose.yml">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/db/migration/V1__create_initial_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,55 @@
       <option name="project" value="LOCAL" />
       <updated>1782305930138</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Book and User Repository">
+      <option name="closed" value="true" />
+      <created>1782305981979</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782305981979</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add Book and User Services">
+      <option name="closed" value="true" />
+      <created>1782306139251</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1782306139251</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add BookController">
+      <option name="closed" value="true" />
+      <created>1782306168821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1782306168821</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Configuration .idea files to backend folder">
+      <option name="closed" value="true" />
+      <created>1782306197083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1782306197083</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add auth files and JWT configuration">
+      <option name="closed" value="true" />
+      <created>1782306277102</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1782306277102</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Docker configuration: docker-compose.yml">
+      <option name="closed" value="true" />
+      <created>1782306312436</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782306312436</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +257,12 @@
     <MESSAGE value="Initial configurations. application.properties and pom.xml" />
     <MESSAGE value="Add Domain entities Book adn User" />
     <MESSAGE value="Add DTOs Book and User Request and Response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add DTOs Book and User Request and Response" />
+    <MESSAGE value="Add Book and User Repository" />
+    <MESSAGE value="Add Book and User Services" />
+    <MESSAGE value="Add BookController" />
+    <MESSAGE value="Configuration .idea files to backend folder" />
+    <MESSAGE value="Add auth files and JWT configuration" />
+    <MESSAGE value="Docker configuration: docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker configuration: docker-compose.yml" />
   </component>
 </project>

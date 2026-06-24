@@ -25,8 +25,9 @@ public class Book {
     @Column(nullable = false)
     private String author;
 
-    private int year;
+    private Integer year;
 
+    @Column(columnDefinition = "TEXT")
     private String description;
 
 }
