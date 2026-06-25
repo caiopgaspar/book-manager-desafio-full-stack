@@ -1,0 +1,55 @@
+<div class="register-container">
+  <div class="register-card">
+    <h1>📚 Book Manager</h1>
+    <h2>Create Account</h2>
+
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          [(ngModel)]="user.username"
+          required
+          placeholder="Enter username"
+          [disabled]="loading"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="user.email"
+          required
+          placeholder="Enter email"
+          [disabled]="loading"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="user.password"
+          required
+          placeholder="Enter password"
+          [disabled]="loading"
+        />
+      </div>
+
+      <button type="submit" [disabled]="loading" class="btn-register">
+        {{ loading ? 'Creating account...' : 'Sign up' }}
+      </button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a routerLink="/login">Sign in</a>
+    </div>
+  </div>
+</div>
