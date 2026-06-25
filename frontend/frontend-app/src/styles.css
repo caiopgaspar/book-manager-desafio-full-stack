@@ -1,0 +1,26 @@
+/* Adicione ao final do arquivo */
+@import 'ngx-toastr/toastr';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+}
+
+.toast-container {
+  z-index: 9999 !important;
+}
+
+/* Toast personalizado */
+.toast-success {
+  background: linear-gradient(135deg, #00b09b, #96c93d) !important;
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #f093fb, #f5576c) !important;
+}
