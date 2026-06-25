@@ -37,7 +37,7 @@ export class BookListComponent implements OnInit {
     this.cdr.detectChanges();
 
     this.bookService.getBooks(this.currentPage, this.pageSize).subscribe({
-      next: (data: PageResponse<Book[]>) => {
+      next: (data: PageResponse<Book>) => {
         console.log('Data:', data);
         this.books = data.content;
         this.currentPage = data.pageNumber;
@@ -65,7 +65,7 @@ export class BookListComponent implements OnInit {
     this.cdr.detectChanges();
 
     this.bookService.searchBooks(title, this.currentPage, this.pageSize).subscribe({
-      next: (data: PageResponse<Book[]>) => {
+      next: (data: PageResponse<Book>) => {
         this.books = data.content;
         this.currentPage = data.pageNumber;
         this.totalPages = data.totalPages;
@@ -136,4 +136,13 @@ export class BookListComponent implements OnInit {
       }
     });
   }
+
+  getStartIndex(): number {
+    return this.currentPage * this.pageSize + 1;
+  }
+
+  getEndIndex(): number {
+    return Math.min((this.currentPage + 1) * this.pageSize, this.totalElements);
+  }
+
 }

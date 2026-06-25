@@ -79,6 +79,6 @@
   </div>
 
   <div *ngIf="!loading && totalElements > 0" class="pagination-info">
-    Showing {{ currentPage * pageSize + 1 }} - {{ Math.min((currentPage + 1) * pageSize, totalElements) }} of {{ totalElements }} books
+    Showing {{ getStartIndex() }} - {{ getEndIndex() }} of {{ totalElements }} books
   </div>
 </div>
