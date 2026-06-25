@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Book form to add and edit book, book list to show books">
+    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Add search by title field.">
+      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,31 +44,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BackendApplication (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Application.BackendApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/c-gas/OneDrive/Documentos/DEV/desafio-tecnico-dev-pleno-i/book-manager-desafio-full-stack&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BackendApplication (1).executor": "Debug",
+    "Application.BackendApplication.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "development",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/c-gas/OneDrive/Documentos/DEV/desafio-tecnico-dev-pleno-i/book-manager-desafio-full-stack/frontend",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\c-gas\OneDrive\Documentos\DEV\desafio-tecnico-dev-pleno-i\book-manager-desafio-full-stack\frontend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c-gas\OneDrive\Documentos\DEV\desafio-tecnico-dev-pleno-i\book-manager-desafio-full-stack\frontend\frontend-app" />
+      <recent name="C:\Users\c-gas\OneDrive\Documentos\DEV\desafio-tecnico-dev-pleno-i\book-manager-desafio-full-stack" />
       <recent name="C:\Users\c-gas\OneDrive\Documentos\DEV\desafio-tecnico-dev-pleno-i\book-manager-desafio-full-stack\backend" />
     </key>
   </component>
@@ -258,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782396849499</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Add search by title field.">
+      <option name="closed" value="true" />
+      <created>1782398111599</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1782398111599</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -320,6 +333,7 @@
     <MESSAGE value="General configuration on auth, routes, services" />
     <MESSAGE value="Login and register components" />
     <MESSAGE value="Book form to add and edit book, book list to show books" />
-    <option name="LAST_COMMIT_MESSAGE" value="Book form to add and edit book, book list to show books" />
+    <MESSAGE value="Add search by title field." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add search by title field." />
   </component>
 </project>
