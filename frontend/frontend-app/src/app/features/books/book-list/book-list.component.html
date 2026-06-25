@@ -1,0 +1,27 @@
+<div class="book-list-container">
+  <div class="header">
+    <h1>Book Manager</h1>
+    <a routerLink="/books/new" class="btn-add">+ Add Book</a>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    Loading...
+  </div>
+
+  <div *ngIf="!loading && books.length === 0" class="empty-state">
+    <p>No books found. <a routerLink="/books/new">Add your first book</a></p>
+  </div>
+
+  <div *ngIf="!loading && books.length > 0" class="books-grid">
+    <div *ngFor="let book of books" class="book-card">
+      <h3>{{ book.title }}</h3>
+      <p class="author">By: {{ book.author }}</p>
+      <p *ngIf="book.year" class="year">Year: {{ book.year }}</p>
+      <p *ngIf="book.description" class="description">{{ book.description }}</p>
+      <div class="actions">
+        <a [routerLink]="['/books', book.id, 'edit']" class="btn-edit">Edit</a>
+        <button (click)="deleteBook(book)" class="btn-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
