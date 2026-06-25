@@ -23,6 +23,12 @@ export class BookService {
     return this.http.get<Book[]>(`${this.apiUrl}${API.BOOKS.BASE}`);
   }
 
+  searchBooks(title: string): Observable<Book[]> {
+    return this.http.get<Book[]>(`${this.apiUrl}${API.BOOKS.BASE}`, {
+      params: { title }
+    });
+  }
+
   getBook(id: number): Observable<Book> {
     return this.http.get<Book>(`${this.apiUrl}${API.BOOKS.BY_ID(id)}`);
   }

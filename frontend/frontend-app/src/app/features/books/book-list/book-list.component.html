@@ -1,7 +1,19 @@
 <div class="book-list-container">
   <div class="header">
     <h1>Book Manager</h1>
-    <a routerLink="/books/new" class="btn-add">+ Add Book</a>
+    <div class="header-actions">
+      <div class="search-box">
+        <input
+          type="text"
+          [(ngModel)]="searchTitle"
+          placeholder="Search by title..."
+          (keyup.enter)="searchBooks()"
+        />
+        <button (click)="searchBooks()" class="btn-search">Search</button>
+        <button *ngIf="searchTitle" (click)="onSearchClear()" class="btn-clear">Clear</button>
+      </div>
+      <a routerLink="/books/create" class="btn-add">+ Add Book</a>
+    </div>
   </div>
 
   <div *ngIf="loading" class="loading">
@@ -9,7 +21,7 @@
   </div>
 
   <div *ngIf="!loading && books.length === 0" class="empty-state">
-    <p>No books found. <a routerLink="/books/new">Add your first book</a></p>
+    <p>No books found. <a routerLink="/books/create">Add your first book</a></p>
   </div>
 
   <div *ngIf="!loading && books.length > 0" class="books-grid">

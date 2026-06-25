@@ -4,50 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Database persistence - add Flyway configuration">
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.vscode/launch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.vscode/mcp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/auth/auth-guard.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/auth/auth.interceptor.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/auth/auth.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-form/book-form.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-form/book-form.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-form/book-form.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/register/register.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/register/register.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/register/register.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/shared/Constants/api.constants.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/tsconfig.spec.json" afterDir="false" />
+    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Book form to add and edit book, book list to show books">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +218,47 @@
       <option name="project" value="LOCAL" />
       <updated>1782312566732</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create Angular project to frontend">
+      <option name="closed" value="true" />
+      <created>1782396697317</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1782396697317</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Cors configuration">
+      <option name="closed" value="true" />
+      <created>1782396715454</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1782396715454</updated>
+    </task>
+    <task id="LOCAL-00016" summary="General configuration on auth, routes, services">
+      <option name="closed" value="true" />
+      <created>1782396783869</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1782396783869</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Login and register components">
+      <option name="closed" value="true" />
+      <created>1782396805912</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1782396805912</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Book form to add and edit book, book list to show books">
+      <option name="closed" value="true" />
+      <created>1782396849499</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1782396849499</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -312,6 +315,11 @@
     <MESSAGE value="Add auth files and JWT configuration" />
     <MESSAGE value="Docker configuration: docker-compose.yml" />
     <MESSAGE value="Database persistence - add Flyway configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database persistence - add Flyway configuration" />
+    <MESSAGE value="Create Angular project to frontend" />
+    <MESSAGE value="Cors configuration" />
+    <MESSAGE value="General configuration on auth, routes, services" />
+    <MESSAGE value="Login and register components" />
+    <MESSAGE value="Book form to add and edit book, book list to show books" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book form to add and edit book, book list to show books" />
   </component>
 </project>

@@ -1,27 +1,21 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { BookService } from '../../../core/services/book.service';
+import { BookService, Book } from '../../../core/services/book.service';
 import { ToastrService } from 'ngx-toastr';
-
-interface Book {
-  id: number;
-  title: string;
-  author: string;
-  year: number;
-  description: string;
-}
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './book-list.component.html',
   styleUrl: './book-list.component.css'
 })
 export class BookListComponent implements OnInit {
   books: Book[] = [];
   loading = true;
+  searchTitle = '';
 
   constructor(
     private bookService: BookService,
@@ -51,6 +45,35 @@ export class BookListComponent implements OnInit {
         this.cdr.detectChanges();
       }
     });
+  }
+
+  searchBooks(): void {
+    const title = this.searchTitle.trim();
+    if (!title) {
+      this.loadBooks();
+      return;
+    }
+
+    this.loading = true;
+    this.cdr.detectChanges();
+
+    this.bookService.searchBooks(title).subscribe({
+      next: (data) => {
+        this.books = data;
+        this.loading = false;
+        this.cdr.detectChanges();
+      },
+      error: (error) => {
+        console.error('Error searching books:', error);
+        this.loading = false;
+        this.cdr.detectChanges();
+      }
+    });
+  }
+
+  onSearchClear(): void {
+    this.searchTitle = '';
+    this.loadBooks();
   }
 
   deleteBook(book: Book): void {

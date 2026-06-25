@@ -16,7 +16,7 @@ export const routes: Routes = [
   },
 
   {
-    path: 'books/new',
+    path: 'books/create',
     component: BookFormComponent,
     canActivate: [authGuard]
   },
