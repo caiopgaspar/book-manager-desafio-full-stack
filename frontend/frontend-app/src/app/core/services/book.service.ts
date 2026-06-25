@@ -11,6 +11,14 @@ export interface Book {
   description: string;
 }
 
+export interface PageResponse<T> {
+  content: T[];
+  pageNumber: number;
+  pageSize: number;
+  totalElements: number;
+  totalPages: number;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -19,13 +27,15 @@ export class BookService {
 
   constructor(private http: HttpClient) {}
 
-  getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(`${this.apiUrl}${API.BOOKS.BASE}`);
+  getBooks(page: number = 0, size: number = 12): Observable<PageResponse<Book[]>> {
+    return this.http.get<PageResponse<Book[]>>(`${this.apiUrl}${API.BOOKS.BASE}`, {
+      params: { page: page.toString(), size: size.toString() }
+    });
   }
 
-  searchBooks(title: string): Observable<Book[]> {
-    return this.http.get<Book[]>(`${this.apiUrl}${API.BOOKS.BASE}`, {
-      params: { title }
+  searchBooks(title: string, page: number = 0, size: number = 12): Observable<PageResponse<Book[]>> {
+    return this.http.get<PageResponse<Book[]>>(`${this.apiUrl}${API.BOOKS.BASE}`, {
+      params: { title, page: page.toString(), size: size.toString() }
     });
   }
 

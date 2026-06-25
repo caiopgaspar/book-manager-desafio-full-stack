@@ -2,6 +2,7 @@ package com.bookmanager.backend.controller;
 
 import com.bookmanager.backend.dto.request.BookRequest;
 import com.bookmanager.backend.dto.response.BookResponse;
+import com.bookmanager.backend.dto.response.PageResponse;
 import com.bookmanager.backend.service.BookService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -16,13 +17,18 @@ import java.util.List;
 public class BookController {
 
     private final BookService bookService;
+    private static final int DEFAULT_PAGE_SIZE = 12;
 
     @GetMapping
-    public ResponseEntity<List<BookResponse>> getAllBooks(@RequestParam(required = false) String title) {
+    public ResponseEntity<PageResponse<BookResponse>> getAllBooks(
+            @RequestParam(required = false) String title,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "12") int size) {
+
         if (title != null && !title.isEmpty()) {
-            return ResponseEntity.ok(bookService.searchBookByTitle(title));
+            return ResponseEntity.ok(bookService.searchBookByTitle(title, page, size));
         }
-        return ResponseEntity.ok(bookService.getAllBooks());
+        return ResponseEntity.ok(bookService.getAllBooks(page, size));
     }
 
     @GetMapping("/{id}")
@@ -32,7 +38,7 @@ public class BookController {
 
     @PostMapping("/create")
     public ResponseEntity<BookResponse> createBook(@Valid @RequestBody BookRequest request) {
-        BookResponse response =bookService.createBook((request));
+        BookResponse response = bookService.createBook((request));
 
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }

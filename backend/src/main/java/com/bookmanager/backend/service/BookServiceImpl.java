@@ -2,9 +2,14 @@ package com.bookmanager.backend.service;
 
 import com.bookmanager.backend.dto.request.BookRequest;
 import com.bookmanager.backend.dto.response.BookResponse;
+import com.bookmanager.backend.dto.response.PageResponse;
 import com.bookmanager.backend.domain.Book;
 import com.bookmanager.backend.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -13,24 +18,34 @@ import java.util.List;
 public class BookServiceImpl implements BookService{
 
     private final BookRepository bookRepository;
+    private static final int DEFAULT_PAGE_SIZE = 12;
 
     @Override
-    public List<BookResponse> getAllBooks() {
+    public PageResponse<BookResponse> getAllBooks(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by("id").ascending());
+        Page<Book> bookPage = bookRepository.findAll(pageable);
 
-        List<Book> books = bookRepository.findAll();
-
-        return books.stream()
-                .map(this::toResponse)
-                .toList();
-
+        return new PageResponse<>(
+            bookPage.getContent().stream().map(this::toResponse).toList(),
+            bookPage.getNumber(),
+            bookPage.getSize(),
+            bookPage.getTotalElements(),
+            bookPage.getTotalPages()
+        );
     }
 
     @Override
-    public List<BookResponse> searchBookByTitle(String title) {
-        return bookRepository.findByTitleContainingIgnoreCase(title)
-                .stream()
-                .map(this::toResponse)
-                .toList();
+    public PageResponse<BookResponse> searchBookByTitle(String title, int page, int size) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by("id").ascending());
+        Page<Book> bookPage = bookRepository.findByTitleContainingIgnoreCase(title, pageable);
+
+        return new PageResponse<>(
+            bookPage.getContent().stream().map(this::toResponse).toList(),
+            bookPage.getNumber(),
+            bookPage.getSize(),
+            bookPage.getTotalElements(),
+            bookPage.getTotalPages()
+        );
     }
 
     @Override

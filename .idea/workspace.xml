@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Add search by title field.">
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/frontend-app/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="76632a19-8fef-4736-a1bc-76af35d16a93" name="Changes" comment="Docker configuration - include frontend Angular with nginix to container creation and run">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/bookmanager/backend/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/services/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/features/books/book-list/book-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782398111599</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Docker configuration - include frontend Angular with nginix to container creation and run">
+      <option name="closed" value="true" />
+      <created>1782402570968</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1782402570968</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -334,6 +347,7 @@
     <MESSAGE value="Login and register components" />
     <MESSAGE value="Book form to add and edit book, book list to show books" />
     <MESSAGE value="Add search by title field." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add search by title field." />
+    <MESSAGE value="Docker configuration - include frontend Angular with nginix to container creation and run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker configuration - include frontend Angular with nginix to container creation and run" />
   </component>
 </project>
