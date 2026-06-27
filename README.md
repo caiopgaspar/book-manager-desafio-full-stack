@@ -26,17 +26,17 @@ Aplicação full-stack para gerenciamento de livros com autenticação JWT e CRU
 ## 🛠️ Tecnologias
 
 ### Backend
-| Tecnologia | Versão | Descrição |
-|------------|--------|-----------|
-| **Java** | 17 | Linguagem de programação |
-| **Spring Boot** | 4.0.6 | Framework principal |
-| **Spring Security** | - | Autenticação e autorização |
-| **Spring Data JPA** | - | ORM e acesso a dados |
-| **JWT** | 0.11.5 | Tokens de autenticação |
-| **PostgreSQL** | 17 | Banco de dados |
-| **Flyway** | - | Migrações do banco |
-| **Lombok** | - | Redução de boilerplate |
-| **Maven** | - | Gerenciador de dependências |
+| Tecnologia          | Versão     | Descrição                   |
+|---------------------|------------|-----------------------------|
+| **Java**            | 17         | Linguagem de programação    |
+| **Spring Boot**     | 3.5.4      | Framework principal         |
+| **Spring Security** | -          | Autenticação e autorização  |
+| **Spring Data JPA** | -          | ORM e acesso a dados        |
+| **JWT**             | 0.11.5     | Tokens de autenticação      |
+| **PostgreSQL**      | 17         | Banco de dados              |
+| **Flyway**          | -          | Migrações do banco          |
+| **Lombok**          | -          | Redução de boilerplate      |
+| **Maven**           | -          | Gerenciador de dependências |
 
 ### Frontend
 | Tecnologia | Versão | Descrição |
@@ -131,15 +131,15 @@ A estrutura escolhida fornece uma clara separação de responsabilidades e garan
     │   ├── src/
     │   │   ├── main/
     │   │   │   ├── java/com/bookmanager/backend/
-    │   │   │   │   ├── config/          # Configurações (CORS, Security)
-    │   │   │   │   ├── controller/      # REST Controllers
-    │   │   │   │   ├── domain/          # Entidades
-    │   │   │   │   ├── dto/             # Data Transfer Objects
-    │   │   │   │   ├── repository/      # Repositories
-    │   │   │   │   ├── security/        # JWT e autenticação
-    │   │   │   │   └── service/         # Regras de negócio
+    │   │   │   │   ├── config/                         # Configurações (CORS, Security)
+    │   │   │   │   ├── controller/                     # REST Controllers
+    │   │   │   │   ├── domain/                         # Entidades
+    │   │   │   │   ├── dto/                            # Data Transfer Objects
+    │   │   │   │   ├── repository/                     # Repositories
+    │   │   │   │   ├── security/                       # JWT e autenticação
+    │   │   │   │   └── service/                        # Regras de negócio
     │   │   │   └── resources/
-    │   │   │       ├── db/migration/    # Migrações Flyway
+    │   │   │       ├── db/migration/                   # Migrações Flyway
     │   │   │       └── application.properties
     │   │   └── test/
     │   ├── Dockerfile
@@ -159,23 +159,23 @@ A estrutura escolhida fornece uma clara separação de responsabilidades e garan
 
 ## ⚡ Funcionalidades
 
-    Autenticação JWT e Páginas protegidas
+    🔸 Autenticação JWT e Páginas protegidas
 
-    Registro de usuários e login
+    🔸 Registro de usuários e login
 
-    CRUD completo de livros
+    🔸 CRUD completo de livros
 
-    Busca de livros por título  
+    🔸 Busca de livros por título  
 
-    Dockerização completa da aplicação (backend + frontend + banco PostgreSQL)
+    🔸 Dockerização completa da aplicação (backend + frontend + banco PostgreSQL)
 
-    Migrações e versionamento do banco com Flyway
+    🔸 Migrações e versionamento do banco com Flyway
 
-    CORS configurado para comunicação frontend-backend
+    🔸 CORS configurado para comunicação frontend-backend
 
-    Paginação na listagem de livros
+    🔸 Paginação na listagem de livros
 
-    Notificações toast para feedback ao usuário 
+    🔸 Notificações toast para feedback ao usuário 
 
 
 
